@@ -11,3 +11,7 @@ Feito isso, após realizar o downgrade. com estes comandos, instalamos o styled-
 da seguinte forma:
 
 npm i styled-components
+
+Agora vamos instalar a tipagem do Styled Component
+
+npm i @types/styled-components -D
