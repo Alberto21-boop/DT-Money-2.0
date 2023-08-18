@@ -15,3 +15,7 @@ npm i styled-components
 Agora vamos instalar a tipagem do Styled Component
 
 npm i @types/styled-components -D
+
+E para os ícones da pagina vamos utilizar o phosphors
+
+npm i phosphor-react
