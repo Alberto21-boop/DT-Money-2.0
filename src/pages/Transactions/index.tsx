@@ -15,14 +15,14 @@ export function Transactions() {
           <tbody>
             <tr>
               <td width="50%">Desenvolvimento de Site</td>
-              <PriceHightLight variant="income">R$ 12.000,00</PriceHightLight>
+              <PriceHightLight $variant="income">R$ 12.000,00</PriceHightLight>
               <td>Venda</td>
               <td>13/08/2023</td>
             </tr>
 
             <tr>
               <td width="50%">Hamburger</td>
-              <PriceHightLight variant="outcome">- R$ 59,90</PriceHightLight>
+              <PriceHightLight $variant="outcome">- R$ 59,90</PriceHightLight>
               <td>Alimentação</td>
               <td>10/08/2023</td>
             </tr>

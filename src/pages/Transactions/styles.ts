@@ -4,7 +4,7 @@ export const TransactionsContainer = styled.main`
   width: 100%;
   max-width: 1120px;
   margin: 4rem auto 0;
-  padding: 0 1, 5rem;
+  padding: 0 1.5rem;
 `;
 
 export const TransactionsTable = styled.table`
@@ -30,12 +30,12 @@ export const TransactionsTable = styled.table`
 `;
 
 interface PriceHightLightProps {
-  variant: "income" | "outcome";
+  $variant: "income" | "outcome";
 }
 
 export const PriceHightLight = styled.span<PriceHightLightProps>`
   color: ${(props) =>
-    props.variant === "income"
+    props.$variant === "income"
       ? props.theme["green-300"]
       : props.theme["red-300"]};
 `;
