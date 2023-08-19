@@ -33,7 +33,7 @@ interface PriceHightLightProps {
   $variant: "income" | "outcome";
 }
 
-export const PriceHightLight = styled.span<PriceHightLightProps>`
+export const PriceHightLight = styled.td<PriceHightLightProps>`
   color: ${(props) =>
     props.$variant === "income"
       ? props.theme["green-300"]
