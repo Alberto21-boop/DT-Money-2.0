@@ -27,3 +27,18 @@ npm install @radix-ui/react-dialog
 Para os botões do modal vamos instalar mais um pacote do Radix para controlar qual botão foi selecionando
 
 npm install @radix-ui/react-radio-group
+
+Para API fake, vamos utilizar o jsson-server com o seguinte comando:
+
+npm i json-server -D
+
+Uma vez feito isso, vamos "configurar" o nosso back fake e subi lo em outra porta, a porta 3333
+com o seguinte comando:
+
+npx json-server server.json -p 3333
+
+Logo depois você deve ir ao seu console e digitar new Date().toISOString(), e desta forma o própio
+console vai retornar um string '2023-08-21T16:34:26.647Z', e será esta a data que você vai colocar
+em sua API fake
+Depois rode este comando no seu servidor npx json-server server.json -p 3333 -w
+Pois sempre que o servidor for alterado, você vai conseguir visualizar tal alteração.
