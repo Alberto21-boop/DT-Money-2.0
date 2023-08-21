@@ -1,5 +1,5 @@
 import * as Dialog from "@radix-ui/react-dialog"
-import { CloseButton, Content, Overlay, TransactionType, TransactionTypeButton } from "./styles";
+import { CloseButton, Content, Overlay, T, TransactionType, /* TransactionTypeButton  */ } from "./styles";
 import { ArrowCircleDown, ArrowCircleUp, X } from "phosphor-react";
 
 export function NewTransactionModal() {
@@ -20,15 +20,15 @@ export function NewTransactionModal() {
           <input type="text" placeholder="Categoria" required />
 
           <TransactionType>
-            <TransactionTypeButton $variant='income' value='income'>
+            <T $variant='income' value='income'>
               <ArrowCircleUp size={24} />
               Entrada
-            </TransactionTypeButton>
+            </T>
 
-            <TransactionTypeButton $variant='outcome' value='outcome'>
+            <T $variant='outcome' value='outcome'>
               <ArrowCircleDown size={24} />
               Saída
-            </TransactionTypeButton>
+            </T>
           </TransactionType>
           {/* uma vez feito a logica no css é so adicionar aos ícones conforme feito no TransactionTypeButton  */}
 

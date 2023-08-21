@@ -83,9 +83,10 @@ interface TransactionTypeButtonPros {
   $variant: "income" | "outcome";
 }
 
-export const TransactionTypeButton = styled(
-  RadioGroup.Item
-)<TransactionTypeButtonPros>`
+// T é o TransactionTypeButton do export const TransactionTypeButton = styled(RadioGroup.Item)
+// e assim não quebrar o eslint da aplicação.
+
+export const T = styled(RadioGroup.Item)<TransactionTypeButtonPros>`
   background: ${(props) => props.theme["gray-700"]};
   padding: 1rem;
   display: flex;
@@ -105,17 +106,22 @@ export const TransactionTypeButton = styled(
     //esta logica do svg é para pegar a estilização em ícones no qual
     //utilizar duas vezes o mesmo ícone do phorphors-react, e ai iremos
     //apenas colocar um único svg
+  }
 
-    &[data-state="checked"] {
+  &[data-state="unchecked"]:hover {
+    transition: background-color 0.2s;
+    background: ${(props) => props.theme["gray-600"]};
+  }
+
+  &[data-state="checked"] {
+    background: ${(props) =>
+      props.$variant === "income"
+        ? props.theme["green-500"]
+        : props.theme["red-500"]};
+    color: ${(props) => props.theme.white};
+
+    svg {
       color: ${(props) => props.theme.white};
-      background: ${(props) =>
-        props.$variant === "income"
-          ? props.theme["green-500"]
-          : props.theme["red-500"]};
-
-      svg {
-        color: ${(props) => props.theme.white};
-      }
     }
   }
 `;
