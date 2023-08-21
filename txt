@@ -19,3 +19,11 @@ npm i @types/styled-components -D
 E para os ícones da pagina vamos utilizar o phosphors
 
 npm i phosphor-react
+
+Para o modal, vamos trabalhar com Radix, logo vamos instala lo através do:
+
+npm install @radix-ui/react-dialog
+
+Para os botões do modal vamos instalar mais um pacote do Radix para controlar qual botão foi selecionando
+
+npm install @radix-ui/react-radio-group
