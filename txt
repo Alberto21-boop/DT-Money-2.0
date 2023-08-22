@@ -47,3 +47,5 @@ Para implementação, quanto para a validação de nossos formulários, vamos no
 do zod e do hook-form, com o seguinte comando para instala los
 
 npm i react-hook-form zod
+
+E para implementar o resolvers, e complementar o zo instalamos o npm i @hookform/resolvers
