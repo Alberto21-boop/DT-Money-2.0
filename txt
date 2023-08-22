@@ -1,4 +1,4 @@
-Devido a atualização do React, até a data de hoje 16/05/2023 é impossivel
+Devido a atualização do React, até a data de hoje 16/05/2023 é impossível
 trabalhar com styled-components.
 
 Por tanto devemos realizar um downgrade no npm para a versão 7.0.0 da seguinte
@@ -42,3 +42,8 @@ console vai retornar um string '2023-08-21T16:34:26.647Z', e será esta a data q
 em sua API fake
 Depois rode este comando no seu servidor npx json-server server.json -p 3333 -w
 Pois sempre que o servidor for alterado, você vai conseguir visualizar tal alteração.
+
+Para implementação, quanto para a validação de nossos formulários, vamos nos utilizar
+do zod e do hook-form, com o seguinte comando para instala los
+
+npm i react-hook-form zod
