@@ -49,3 +49,7 @@ do zod e do hook-form, com o seguinte comando para instala los
 npm i react-hook-form zod
 
 E para implementar o resolvers, e complementar o zo instalamos o npm i @hookform/resolvers
+
+Para as requisições vamos utilizar o axios através do seguinte comando
+
+npm i axios

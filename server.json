@@ -23,6 +23,22 @@
       "category": "Educação",
       "price": 4000,
       "createdAt": "2023-04-21T16:18:26.647Z"
+    },
+    {
+      "description": "Energético Monster",
+      "category": "Alimentação",
+      "price": 10,
+      "type": "outcome",
+      "createdAt": "2023-08-24T12:35:04.528Z",
+      "id": 4
+    },
+    {
+      "description": "Pães de Alho",
+      "category": "Alimentação",
+      "price": 13,
+      "type": "outcome",
+      "createdAt": "2023-08-24T12:44:04.410Z",
+      "id": 5
     }
   ]
 }
